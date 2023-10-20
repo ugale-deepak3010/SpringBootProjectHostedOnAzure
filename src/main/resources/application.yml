@@ -1,0 +1,11 @@
+spring:
+    Datasource:
+        password: Pass@12345
+        url: jdbc:sqlserver://myazuredbforhost.database.windows.net:1433;database=myazuredbforhost;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+        username: DeepakAdmin@myazuredbforhost
+    Jpa:
+        hibernate:
+            ddl-auto: update
+            dialect: org.hibernate.dialect.SQLServer2012Dialect
+        show-sql: true
+        
